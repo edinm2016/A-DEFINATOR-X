@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A-DEFINATOR-X research operating system prototype." />
+    <title>A-DEFINATOR-X · Research OS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar">
+        <a class="brand" href="#dashboard" aria-label="A-Definator-X home"><span class="brand-mark">A</span><span>A-DEFINATOR<em>-X</em></span></a>
+        <p class="eyebrow">Research operating system</p>
+        <nav aria-label="Research areas">
+          <a class="nav-item active" href="#dashboard" data-view="Dashboard"><span>◈</span>Dashboard</a>
+          <a class="nav-item" href="#idea-lab" data-view="Idea Lab"><span>✦</span>Idea Lab</a>
+          <a class="nav-item" href="#hypothesis-lab" data-view="Hypothesis Lab"><span>⌁</span>Hypothesis Lab</a>
+          <a class="nav-item" href="#mathematics-lab" data-view="Mathematics Lab"><span>∑</span>Mathematics Lab</a>
+          <a class="nav-item" href="#science-lab" data-view="Science Lab"><span>⟡</span>Science Lab</a>
+          <a class="nav-item" href="#simulation-lab" data-view="Simulation Lab"><span>◌</span>Simulation Lab</a>
+          <a class="nav-item" href="#discovery-lab" data-view="Discovery Lab"><span>◫</span>Discovery Lab</a>
+          <a class="nav-item" href="#self-critic" data-view="Self-Critic"><span>◒</span>Self-Critic</a>
+          <a class="nav-item" href="#research-memory" data-view="Research Memory"><span>▤</span>Research Memory</a>
+        </nav>
+        <div class="sidebar-footer"><span class="pulse"></span> System status <strong>Prototype online</strong></div>
+      </aside>
+      <main>
+        <header class="topbar">
+          <button class="menu-button" id="menu-button" aria-label="Open navigation">☰</button>
+          <div><span class="eyebrow">Workspace / <b id="view-name">Dashboard</b></span><h1>Good evening, researcher.</h1></div>
+          <div class="operator"><span class="operator-dot">E</span><span>Explorer <small>Local session</small></span></div>
+        </header>
+        <section class="hero" id="dashboard">
+          <div class="hero-copy"><p class="label">A-DEFINATOR-X / v0.1</p><h2>Turn uncertainty into <span>structured inquiry.</span></h2><p class="hero-text">An all-in-one research cockpit for moving from the first spark to a defensible discovery.</p></div>
+          <div class="function-meter"><span>FUNCTION COVERAGE</span><strong>18 <i>/ 420 planned</i></strong><div class="meter"><i></i></div><small>Prototype interface & workflows</small></div>
+        </section>
+        <section class="prompt-panel" aria-labelledby="prompt-title">
+          <div class="prompt-heading"><span class="spark">✦</span><div><p class="eyebrow">Research prompt</p><h3 id="prompt-title">What do you want to investigate?</h3></div></div>
+          <form id="research-form"><label class="visually-hidden" for="research-input">Research question</label><textarea id="research-input" rows="2" placeholder="e.g. How could urban heat islands be reduced without increasing energy demand?"></textarea><div class="prompt-actions"><span class="hint">⌘ Enter to run analysis</span><button type="submit">Launch inquiry <span>→</span></button></div></form>
+          <p class="response" id="response" aria-live="polite"></p>
+        </section>
+        <section class="section-heading"><div><p class="eyebrow">Active modules</p><h2>Choose a line of inquiry</h2></div><button class="text-button" id="show-planned">View capability map →</button></section>
+        <section class="module-grid" id="idea-lab">
+          <article class="module-card featured"><div class="card-top"><span class="module-icon violet">✦</span><span class="status live">● Available now</span></div><h3>Idea Lab</h3><p>Frame a messy observation into fertile research directions and first questions.</p><button class="module-action" data-module="Idea Lab">Open workspace →</button></article>
+          <article class="module-card" id="hypothesis-lab"><div class="card-top"><span class="module-icon blue">⌁</span><span class="status live">● Available now</span></div><h3>Hypothesis Lab</h3><p>Shape testable claims, assumptions, variables, and expected outcomes.</p><button class="module-action" data-module="Hypothesis Lab">Open workspace →</button></article>
+          <article class="module-card" id="mathematics-lab"><div class="card-top"><span class="module-icon amber">∑</span><span class="status build">◌ In design</span></div><h3>Mathematics Lab</h3><p>Develop formal models, constraints, symbolic reasoning, and proofs.</p><button class="module-action" data-module="Mathematics Lab">Preview route →</button></article>
+          <article class="module-card" id="science-lab"><div class="card-top"><span class="module-icon mint">⟡</span><span class="status build">◌ In design</span></div><h3>Science Lab</h3><p>Connect questions to methods, evidence, domains, and experiments.</p><button class="module-action" data-module="Science Lab">Preview route →</button></article>
+          <article class="module-card" id="simulation-lab"><div class="card-top"><span class="module-icon coral">◌</span><span class="status planned">○ Planned</span></div><h3>Simulation Lab</h3><p>Explore systems through scenarios, parameters, and computational models.</p><button class="module-action" data-module="Simulation Lab">See roadmap →</button></article>
+          <article class="module-card" id="discovery-lab"><div class="card-top"><span class="module-icon pink">◫</span><span class="status planned">○ Planned</span></div><h3>Discovery Lab</h3><p>Surface connections, anomalies, and promising patterns across evidence.</p><button class="module-action" data-module="Discovery Lab">See roadmap →</button></article>
+        </section>
+        <section class="bottom-grid">
+          <article class="activity-panel" id="research-memory"><div class="panel-title"><div><p class="eyebrow">Research memory</p><h3>Recent threads</h3></div><button class="icon-button" aria-label="Add research thread">+</button></div><div class="thread"><span class="thread-line"></span><div><b>Begin a new research thread</b><p>Your prompts, hypotheses, and decisions will appear here.</p></div><time>NOW</time></div></article>
+          <article class="critic-panel" id="self-critic"><span class="status build">◌ PROTOTYPE</span><h3>Self-Critic</h3><p>Evidence confidence, blind spots, and alternative explanations will be examined here.</p><div class="critic-score"><span>Reasoning readiness</span><b>—</b></div></article>
+        </section>
+        <section class="capability-map" id="capability-map" hidden><div><p class="eyebrow">Transparent roadmap</p><h2>Prototype now. 420 functions ahead.</h2></div><div class="roadmap"><div><b>18</b><span>Interface & local workflows</span></div><div><b>146</b><span>Research reasoning functions</span></div><div><b>128</b><span>Modeling & simulation functions</span></div><div><b>128</b><span>Memory, critique & collaboration</span></div></div></section>
+        <footer>Designed as a research interface prototype. No automated scientific claims are generated by this version.</footer>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
